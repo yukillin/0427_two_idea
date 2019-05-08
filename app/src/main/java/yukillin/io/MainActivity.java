@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Memo memo = (Memo) parent.getItemAtPosition(position);
                 Intent intent = new Intent(MainActivity.this,DetailActivity.class);
                 intent.putExtra("updateDate",memo.updateDate);
+                startActivity(intent);
             }
         });
     }
