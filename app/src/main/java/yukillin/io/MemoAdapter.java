@@ -1,10 +1,11 @@
-package android.lifeistech.com.memo;
+package yukillin.io;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -25,6 +26,9 @@ public class MemoAdapter extends ArrayAdapter<Memo> {
         if (convertView == null) {
             convertView = layoutinflater.inflate(R.layout.layout_item_memo, null);
         }
+
+        TextView contentText = (TextView) convertView.findViewById(R.id.contentText);
+        contentText.setText(memo.content);
 
         return convertView;
     }

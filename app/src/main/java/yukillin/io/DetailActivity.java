@@ -1,4 +1,4 @@
-package android.lifeistech.com.memo;
+package yukillin.io;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

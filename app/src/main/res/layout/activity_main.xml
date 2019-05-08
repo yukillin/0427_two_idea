@@ -11,8 +11,13 @@
         android:layout_alignParentRight="true"
         android:layout_margin="16dp"
         android:onClick="create"
-        android:src="@drawable/ic_plus"
+        android:src="@drawable/ic_add"
         android:text="作成"
         app:fabSize="normal" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
