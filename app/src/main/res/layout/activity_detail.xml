@@ -26,6 +26,6 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
             android:onClick="update"
-            android:text="update" />
+            android:text="更新" />
     </LinearLayout>
 </RelativeLayout>

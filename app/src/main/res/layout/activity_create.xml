@@ -20,12 +20,11 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/button"
-            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
             android:onClick="create"
-            android:text="+" />
+            android:text="作成" />
+
     </LinearLayout>
 </RelativeLayout>

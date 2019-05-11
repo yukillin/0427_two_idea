@@ -22,7 +22,7 @@ public class DetailActivity extends AppCompatActivity {
 
         realm = Realm.getDefaultInstance();
 
-        contentText = (EditText) findViewById(R.id.contentEditText);
+        contentText = (EditText) findViewById(R.id.contenteditText);
 
         showDate();
 
@@ -46,6 +46,8 @@ public class DetailActivity extends AppCompatActivity {
 
             }
         });
+
+        finish();
 
     }
 
