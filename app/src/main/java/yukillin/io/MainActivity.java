@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     public void setMemoList(){
 
         RealmResults<Memo> results = realm.where(Memo.class).findAll();
+
         List<Memo> items = realm.copyFromRealm(results);
         MemoAdapter adapter = new MemoAdapter(this, R.layout.layout_item_memo,items);
         listView.setAdapter(adapter);
@@ -61,4 +62,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+
 }
