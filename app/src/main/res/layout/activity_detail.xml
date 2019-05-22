@@ -19,6 +19,7 @@
             android:background="#FFFF"
             android:ems="10"
             android:hint="idea"
+            android:textColor="#3EAFB3"
             android:inputType="textPersonName" />
 
         <Button

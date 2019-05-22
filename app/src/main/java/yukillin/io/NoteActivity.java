@@ -22,13 +22,14 @@ public class NoteActivity extends AppCompatActivity {
 
     }
 
-    public void save(View v){
+    @Override
+    protected void onPause() {
+        String contentText = note.getText().toString();
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("key_content",contentText);
+        editor.commit();
 
-    String contentText = note.getText().toString();
-
-    SharedPreferences.Editor editor = pref.edit();
-    editor.putString("key_content",contentText);
-    editor.commit();
+        super.onPause();
 
     finish();
 

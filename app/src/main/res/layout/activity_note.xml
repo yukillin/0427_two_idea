@@ -20,24 +20,8 @@
             android:layout_marginBottom="10dp"
             android:background="#E0F1F3"
             android:text="note"
-            android:textColor="#406B63"/>
+            android:textColor="#6D726F" />
 
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:onClick="save"
-            android:src="@drawable/ic_add"
-            android:text="save"
-            app:backgroundTint="#FD35ADB1"
-            app:fabSize="normal" />
 
     </RelativeLayout>
 </RelativeLayout>

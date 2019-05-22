@@ -11,21 +11,34 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/word1"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
+            android:backgroundTint="#F2F8F8"
+            app:cardCornerRadius="4dp"
             android:layout_marginBottom="10dp"
-            android:layout_weight="1.0"
-            android:background="#F2F8F8"
-            android:gravity="center"
-            android:text="word1"
-            android:textAlignment="center"
-            android:textIsSelectable="false"
-            android:textSize="56sp" />
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/word1"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.0"
+                android:background="#F2F8F8"
+                android:gravity="center"
+                android:text="word1"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:textSize="56sp" />
+
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:id="@+id/textView"
@@ -37,20 +50,34 @@
             android:textColor="#3EAFB3"
             android:textSize="56sp" />
 
-        <TextView
-            android:id="@+id/word2"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginBottom="24dp"
-            android:layout_weight="1.0"
-            android:background="#F2F8F8"
-            android:gravity="center"
-            android:text="word2"
-            android:textAlignment="center"
-            android:textSize="56sp" />
+            android:backgroundTint="#F2F8F8"
+            app:cardCornerRadius="4dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/word2"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.0"
+                android:background="#F2F8F8"
+                android:gravity="center"
+                android:text="word2"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:textSize="56sp" />
+
+        </android.support.v7.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,18 +105,21 @@
                 android:background="#FD35ADB1"
                 android:onClick="change"
                 android:text="random"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textColorLink="#2299A8" />
 
-            <Button
-                android:id="@+id/button6"
+            <ImageButton
+                android:id="@+id/imageButton"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="24dp"
                 android:layout_weight="1"
                 android:background="#FD35ADB1"
-                android:onClick="favorite"
-                android:text="MEMO"
-                android:textColor="#FFFFFF" />
+                android:onClick="change"
+                android:text="random"
+                app:srcCompat="@drawable/ic_action_pen"
+                android:textColorLink="#2299A8"
+                 />
 
         </LinearLayout>
     </LinearLayout>
