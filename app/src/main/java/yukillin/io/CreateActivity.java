@@ -27,7 +27,7 @@ public class CreateActivity extends AppCompatActivity {
 
         realm = Realm.getDefaultInstance();
 
-        contentEditText = (EditText) findViewById(R.id.contentEditText);
+        contentEditText = (EditText) findViewById(R.id.note);
 
     }
 

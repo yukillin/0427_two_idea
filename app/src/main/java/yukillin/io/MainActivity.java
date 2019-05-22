@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         realm = Realm.getDefaultInstance();
-        listView = (ListView) findViewById(R.id.listView);
+        listView = (ListView) findViewById(R.id.listView2);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override

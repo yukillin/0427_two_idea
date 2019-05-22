@@ -15,48 +15,65 @@
             android:id="@+id/word1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_margin="16dp"
-            android:layout_weight="1.5"
-            android:background="@color/colorAccent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.0"
+            android:background="#F2F8F8"
             android:gravity="center"
             android:text="word1"
             android:textAlignment="center"
             android:textIsSelectable="false"
-            android:textSize="80sp" />
+            android:textSize="56sp" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="×"
-            android:textColor="#FD35ADB1"
-            android:textSize="64sp" />
+            android:textColor="#3EAFB3"
+            android:textSize="56sp" />
 
         <TextView
             android:id="@+id/word2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_margin="16dp"
-            android:layout_weight="1.5"
-            android:background="@color/colorAccent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_weight="1.0"
+            android:background="#F2F8F8"
             android:gravity="center"
             android:text="word2"
             android:textAlignment="center"
-            android:textSize="80sp" />
+            android:textSize="56sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.8"
             android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="24dp"
+                android:layout_weight="1"
+                android:background="#FD35ADB1"
+                android:onClick="plus"
+                android:text="+"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_margin="16dp"
+                android:layout_margin="24dp"
                 android:layout_weight="1"
                 android:background="#FD35ADB1"
                 android:onClick="change"
@@ -64,15 +81,16 @@
                 android:textColor="#FFFFFF" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_margin="16dp"
+                android:layout_margin="24dp"
                 android:layout_weight="1"
                 android:background="#FD35ADB1"
-                android:onClick="plus"
-                android:text="+"
+                android:onClick="favorite"
+                android:text="MEMO"
                 android:textColor="#FFFFFF" />
+
         </LinearLayout>
     </LinearLayout>
 

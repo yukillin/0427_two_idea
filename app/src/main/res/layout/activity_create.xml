@@ -2,19 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp">
+    android:background="#8CDBDF">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/contentEditText"
+            android:id="@+id/note"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="51dp"
+            android:background="#FFFFFF"
             android:ems="10"
             android:hint="idea"
             android:inputType="textPersonName" />
@@ -23,8 +25,11 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FD35ADB1"
             android:onClick="create"
-            android:text="作成" />
+            android:text="CREATE"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 </RelativeLayout>
