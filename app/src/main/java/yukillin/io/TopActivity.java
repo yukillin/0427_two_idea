@@ -60,7 +60,7 @@ public class TopActivity extends AppCompatActivity {
 
     }
 
-    public void favorite(View v){
+    public void note(View v){
         Intent intent = new Intent(this,NoteActivity.class);
         startActivity(intent);
 
